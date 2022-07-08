@@ -1,0 +1,22 @@
+{
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^m-(.*)": "@/components/$1/index.vue"
+	  }
+	},
+	"pages": [
+		{
+			"path": "pages/start/index",
+			"style": {
+				"navigationBarTitleText": "vue-scaff-uni"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Vue Scaff Uni",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

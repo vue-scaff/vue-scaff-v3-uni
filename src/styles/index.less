@@ -1,0 +1,30 @@
+// @import 'ant-design-vue/dist/antd.less';
+
+/**
+ * 项目投产时，请移除此处代码！
+ * ========== ========== ==========
+ */
+@font-face {
+  font-family: 'heaver';
+  src: url('//oss.joenix.com/vue-scaff/boldhead.woff') format('woff');
+}
+
+:root {
+  overflow: hidden;
+  font-size: 62.5%;
+}
+
+html, body {
+  overscroll-behavior-x: none;
+}
+
+html {
+  &:after {
+    content: 'Author by Joneix';
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.125);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

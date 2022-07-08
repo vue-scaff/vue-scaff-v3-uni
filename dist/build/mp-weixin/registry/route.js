@@ -1,0 +1,1 @@
+"use strict";var e=Object.freeze(Object.defineProperty({__proto__:null,default:[{path:"/:pathMatch(.*)*",redirect:{name:"404"}},{path:"/",redirect:{name:"start"}}]},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_16=e;

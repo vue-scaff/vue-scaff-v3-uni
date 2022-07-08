@@ -1,0 +1,1 @@
+"use strict";var e=Object.freeze(Object.defineProperty({__proto__:null,default:(e={},t=(()=>{}))=>{const r={};return Object.keys(e).every((o=>{const _=t(e[o],o);return!1===_?_:(r[o]=_,!0)})),r}},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_22=e;

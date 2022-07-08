@@ -1,0 +1,1 @@
+"use strict";var e=Object.freeze(Object.defineProperty({__proto__:null,default:e=>{if(["undefined",void 0,"null",null,""].includes(e))return!0;for(let r in e)return!1;return!0}},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_21=e;

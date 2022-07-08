@@ -1,0 +1,1 @@
+"use strict";var t=Object.freeze(Object.defineProperty({__proto__:null,default:({host:t},e)=>({mock:`${t}/path/to/api`,test:e(`${t}/path/{param}/to`)})},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_13=t;

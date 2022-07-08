@@ -1,0 +1,1 @@
+"use strict";var e=require("../common/assets.js"),s=Object.freeze(Object.defineProperty({__proto__:null,default:(s="")=>new URL({"/src/assets/vue-scaff-fox.png":e._imports_0}[`/src/assets/${s}`],self.location)},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_23=s;
