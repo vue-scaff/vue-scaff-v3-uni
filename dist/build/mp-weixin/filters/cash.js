@@ -1,1 +1,0 @@
-"use strict";var e=Object.freeze(Object.defineProperty({__proto__:null,default:(e,r)=>{switch(r){case"dollar":return`$${e}.00`;case"euro":return`€${e}.00`;default:return e}}},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_10=e;

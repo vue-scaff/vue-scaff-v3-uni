@@ -1,1 +1,0 @@
-"use strict";var e=Object.freeze(Object.defineProperty({__proto__:null,default:"/assets/vue-scaff-fox.png"},Symbol.toStringTag,{value:"Module"}));exports.__glob_2_7=e,exports._imports_0="/assets/vue-scaff-fox.png";
