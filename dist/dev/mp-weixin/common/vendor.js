@@ -7525,7 +7525,7 @@ class HTTP {
     return interceptor.resultParse(await (options.text ? result.text() : result.json()));
   }
 }
-var http$1 = new HTTP();
+new HTTP();
 var uniTolerance = () => {
   return typeof index$1 === "undefined" ? {} : index$1;
 };
@@ -7573,7 +7573,6 @@ var cross2camel = (template) => {
 };
 var gemini = (app, { registry: registry2, resource: resource2 }) => {
   const $api = registry2.api;
-  console.log("uniHttp", http, "http", http$1);
   const $http = http;
   app.config.globalProperties.$api = $api;
   app.config.globalProperties.$http = $http;
