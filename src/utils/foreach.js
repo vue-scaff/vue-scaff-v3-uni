@@ -3,7 +3,7 @@ export default (target = {}, callback = () => {}) => {
   const group = {};
 
   // Loop
-  Object.keys(target).every((key) => {
+  Object.keys(target).every(key => {
     // Get Result from Callback
     const result = callback(target[key], key);
 

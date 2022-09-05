@@ -1,3 +1,3 @@
 export default {
-  host: 'http://vue-scaff.com',
+  host: process.env.scaff.conf.host,
 };

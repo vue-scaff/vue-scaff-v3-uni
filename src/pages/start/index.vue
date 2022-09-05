@@ -1,10 +1,8 @@
 <template>
-  <view class="content">
-    <image class="logo" src="@/assets/vue-scaff-fox.png"></image>
-    <view class="text-area">
-      <text class="title">{{ start.hi }}, {{ world }} !</text>
-    </view>
-  </view>
+  <!-- Screen Welcome -->
+  <m-screen>
+    <m-typography :logo="start.logo" :title="start.title" :sub="start.sub" />
+  </m-screen>
 </template>
 
 <script>
@@ -14,45 +12,22 @@ import map from '@/registry/mixin';
 export default {
   mixins: [
     {
-      computed: mapState(map)
-    }
+      computed: mapState(map),
+    },
   ],
 
   data() {
     return {
-      world: "World"
+      author: '',
+      cash: 0,
     };
   },
-  onLoad() {
+
+  async mounted() {
+    const { author, cash } = await this.$store.dispatch('start/GET_MOCK');
+
+    this.author = author;
+    this.cash = cash;
   },
-  methods: {}
 };
 </script>
-
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
-</style>

@@ -1,6 +1,6 @@
 export default ({ host }, replace) => {
   return {
-    mock: `${host}/path/to/api`,
+    mock: `${host}/mock/demo.json`,
     test: replace(`${host}/path/{param}/to`),
   };
 };

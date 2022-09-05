@@ -1,5 +1,16 @@
+const { getArgv } = require('process-env-argv');
+
+const { mode } = getArgv('--');
+
+const host = {
+  dev: `http://oss.vue-scaff.com`,
+  prod: `http://oss.vue-scaff.com`,
+}[mode || `dev`];
+
 module.exports = {
   uni: true,
+
+  host,
 
   main: {
     app: `App.vue`,
@@ -12,7 +23,17 @@ module.exports = {
 
   extract: {
     util: '/utils/*.js',
+    store: '/stores/*.js',
     custom: '/custom/*.js',
+
+    // util: '/utils/*.js',
+    // filter: '/filters/*.js',
+    // directive: '/directives/*.js',
+    // route: '/pages/**/route.js',
+    // store: '/pages/**/store.js',
+    // component: '/components/*.vue',
+    // style: '/variables.scss',
+    // i18n: '/i18n/*.js',
   },
 
   theme: {
@@ -20,15 +41,6 @@ module.exports = {
   },
 
   lessVariables: '/variables.module.less',
-
-  // util: '/utils/*.js',
-  // filter: '/filters/*.js',
-  // directive: '/directives/*.js',
-  // route: '/pages/**/route.js',
-  // store: '/pages/**/store.js',
-  // component: '/components/*.vue',
-  // style: '/variables.scss',
-  // i18n: '/i18n/*.js',
 
   // 构建时插件
   // plugins: [],
